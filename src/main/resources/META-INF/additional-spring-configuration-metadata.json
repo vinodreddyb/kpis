@@ -1,0 +1,57 @@
+{"properties": [
+  {
+    "name": "navigator.baseurl",
+    "type": "java.lang.String",
+    "description": "A description for 'navigator.baseurl'"
+  },
+  {
+    "name": "navigator.username",
+    "type": "java.lang.String",
+    "description": "A description for 'navigator.username'"
+  },
+  {
+    "name": "navigator.password",
+    "type": "java.lang.String",
+    "description": "A description for 'navigator.password'"
+  },
+  {
+    "name": "hive.url",
+    "type": "java.lang.String",
+    "description": "A description for 'hive.url'"
+  },
+  {
+    "name": "hdfs.username",
+    "type": "java.lang.String",
+    "description": "A description for 'hdfs.username'"
+  },
+  {
+    "name": "kpi.datausage.data.path",
+    "type": "java.lang.String",
+    "description": "A description for 'kpi.datausage.data.path'"
+  },
+  {
+    "name": "kpi.datausage.data.filename",
+    "type": "java.lang.String",
+    "description": "A description for 'kpi.datausage.data.filename'"
+  },
+  {
+    "name": "kpi.datausage.newsources.path",
+    "type": "java.lang.String",
+    "description": "A description for 'kpi.datausage.newsources.path'"
+  },
+  {
+    "name": "kpi.datausage.newsources.filename",
+    "type": "java.lang.String",
+    "description": "A description for 'kpi.datausage.newsources.filename'"
+  },
+  {
+    "name": "kpi.datausage.volums.path",
+    "type": "java.lang.String",
+    "description": "A description for 'kpi.datausage.volums.path'"
+  },
+  {
+    "name": "kpi.datausage.volumns.filename",
+    "type": "java.lang.String",
+    "description": "A description for 'kpi.datausage.volumns.filename'"
+  }
+]}

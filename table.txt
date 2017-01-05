@@ -1,0 +1,40 @@
+CREATE EXTERNAL TABLE `t_kpi_data_usage`(
+ `event_date` date, 
+ `username` string, 
+ `sourcename` string, 
+ `stream` string, 
+ `tanant` string, 
+ `databasename` string, 
+ `tablename` string, 
+  `partition` date,
+`queried_path` string,
+ `queried_volume` double)
+ROW FORMAT DELIMITED 
+  FIELDS TERMINATED BY ',' 
+  LINES TERMINATED BY '\n' 
+STORED AS INPUTFORMAT 
+  'org.apache.hadoop.mapred.TextInputFormat' 
+OUTPUTFORMAT 
+  'org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat'
+LOCATION
+  'hdfs://nameservice1/user/scw409/kpidata/datau/'
+
+
+  
+  CREATE EXTERNAL TABLE `t_data_volume`(
+ `event_date` date, 
+ `tanant` string,
+ `layer` string, 
+ `sourcename` string, 
+ `stream` string, 
+ `volume` double)
+ROW FORMAT DELIMITED 
+  FIELDS TERMINATED BY ',' 
+  LINES TERMINATED BY '\n' 
+STORED AS INPUTFORMAT 
+  'org.apache.hadoop.mapred.TextInputFormat' 
+OUTPUTFORMAT 
+  'org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat'
+LOCATION
+  'hdfs://nameservice1//user/scw409/kpidata/volume_snapshot/'
+
